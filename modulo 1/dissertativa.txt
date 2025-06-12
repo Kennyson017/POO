@@ -1,4 +1,0 @@
-Exercício 2
-c) programação orientada a objetos
-Justificativa:
-A programação orientada a objetos seria a mais adequada nesse caso visto que a estrutura do sistema envolve várias entidades com características e comportamentos diferentes, o que se encaixa muito bem com a estrutura pensada para o paradigma de POO com sua modularização facilitando o reuso e escalabilidade.
