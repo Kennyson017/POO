@@ -2,16 +2,22 @@ package modulo3;
 
 import modulo2.Atividade.Pessoa;
 import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class PessoaTest {
+    Pessoa pessoa = new Pessoa("Jessica", 25);
+
     @Test
     public void testGetNome() {
-        // Cria uma instância da classe Pessoa
-        Pessoa pessoa = new Pessoa("Jessica", 25);
-        // Atribuir um nome para a pessoa
         pessoa.setNome("Jess");
-        // Verifica se o nome retornado é o mesmo que foi setado
         assertEquals("Jess", pessoa.getNome());
+    }
+
+    @Test
+    public void testIdadeNacionalidade(){
+        pessoa.setNacionalidade("brasileira");
+
+        assertEquals("brasileira", pessoa.getNacionalidade());
+        assertEquals(25, pessoa.getIdade());
     }
 }

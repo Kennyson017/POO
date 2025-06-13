@@ -40,5 +40,5 @@ public class Autor extends Pessoa {
                 System.out.println(" - " + livro.getTitulo());
             }
         }
-    }    
-}
+    } 
+}   
