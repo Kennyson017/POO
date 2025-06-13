@@ -1,3 +1,4 @@
+package modulo2.Atividade;
 public class Pessoa {
     private String nome;
     private int idade;

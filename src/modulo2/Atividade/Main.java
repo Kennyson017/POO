@@ -1,3 +1,4 @@
+package modulo2.Atividade;
 import java.util.Date;
 
 public class Main {
@@ -12,17 +13,17 @@ public class Main {
         Date devolucao = new Date(hoje.getTime() + (7L * 24 * 60 * 60 * 1000));
 
         Autor autor001 = new Autor("Jessica Felix", "Desconhecida");
-        Livro book001 = new Livro("Java for Beginners", autor001, "Tecnologia");
+        Livro book001 = new Livro("Java for Beginners", autor001, "Tecnologia", true);
         Usuario user001 = new Usuario("Lucas Rafael", 25);
         Emprestimo loan001 = new Emprestimo(user001, book001, hoje, devolucao);
         
-        Usuario user002 = new Usuario("Joao Miguel", 20);
+        // Usuario user002 = new Usuario("Joao Miguel", 20);
 
-        try {
-            Emprestimo loan002 = new Emprestimo(user002, book001, hoje, devolucao);
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }
+        // try {
+        //     Emprestimo loan002 = new Emprestimo(user002, book001, hoje, devolucao);
+        // } catch (IllegalArgumentException e) {
+        //     System.out.println(e.getMessage());
+        // }
         
         loan001.getAll();
     }

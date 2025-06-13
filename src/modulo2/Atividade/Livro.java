@@ -1,14 +1,15 @@
+package modulo2.Atividade;
 public class Livro {
     private String titulo;
     private Autor autor;
     private String genero;
     private boolean disponivel;
 
-    public Livro(String titulo, Autor autor, String genero) {
+    public Livro(String titulo, Autor autor, String genero, boolean status) {
         this.titulo = titulo;
         this.autor = autor;
         this.genero = genero;
-        this.disponivel = true;
+        this.disponivel = status;
     }
 
     public String getTitulo() {

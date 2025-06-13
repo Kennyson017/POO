@@ -1,3 +1,4 @@
+package modulo2.Atividade;
 import java.util.ArrayList;
 
 public class Usuario extends Pessoa {
